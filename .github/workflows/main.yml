@@ -1,6 +1,9 @@
 name: A workflow for my Hello World file
-on: push
-
+on: 
+  push:
+  workflow_dispatch:
+    inputs:  
+       MY_NAME:
 jobs:
   build:
     name: Hello world action
